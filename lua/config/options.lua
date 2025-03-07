@@ -6,7 +6,7 @@ vim.opt.showmode = false
 
 -- Sync clipboard between OS and Neovim.
 vim.schedule(function()
-    vim.opt.clipboard = 'unnamedplus'
+  vim.opt.clipboard = 'unnamedplus'
 end)
 
 -- Enable break indent
@@ -53,7 +53,7 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 5
 
 -- To remove diagnostic lines in the code
-vim.diagnostic.config({
-    virtual_text = false,
-    virtual_lines = false,
-})
+vim.diagnostic.config {
+  virtual_text = false,
+  virtual_lines = false,
+}
