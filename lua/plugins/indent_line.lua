@@ -1,12 +1,12 @@
 -- Add indentation guides even on blank lines
 return {
-    {
-        'lukas-reineke/indent-blankline.nvim',
-        main = 'ibl',
-        opts = {
-            exclude = {
-                filetypes = { "dashboard" },
-            },
-        },
+  {
+    'lukas-reineke/indent-blankline.nvim',
+    main = 'ibl',
+    opts = {
+      exclude = {
+        filetypes = { 'dashboard' },
+      },
     },
+  },
 }
