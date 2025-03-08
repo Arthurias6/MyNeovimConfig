@@ -1,42 +1,14 @@
 return {
-  {
-    'folke/noice.nvim',
-    event = 'VeryLazy',
-    opts = {
-      views = {
-        cmdline_popup = {
-          border = {
-            style = 'none',
-            padding = { 1, 2 },
-          },
-          filter_options = {},
-          win_options = {
-            winhighlight = 'NormalFloat:NormalFloat,FloatBorder:FloatBorder',
-          },
-        },
-        popupmenu = {
-          relative = 'editor',
-          position = {
-            row = '75%',
-            col = '50%',
-          },
-          size = {
-            width = 60,
-            height = 10,
-          },
-          border = {
-            style = 'none',
-            padding = { 1, 2 },
-          },
-          win_options = {
-            winhighlight = 'NormalFloat:NormalFloat,FloatBorder:FloatBorder',
-          },
-        },
-      },
-      dependencies = {
-        'MunifTanjim/nui.nvim',
-        'rcarriga/nvim-notify',
-      },
-    },
+  "folke/noice.nvim",
+  keys = {
+    { "<leader>sn", false },
+    { "<S-Enter>", false },
+    { "<leader>snl", false },
+    { "<leader>snh", false },
+    { "<leader>sna", false },
+    { "<leader>snd", false },
+    { "<leader>snt", false },
+    { "<c-f>", false, mode = { "i", "n", "s" } },
+    { "<c-b>", false, mode = { "i", "n", "s" } },
   },
 }
